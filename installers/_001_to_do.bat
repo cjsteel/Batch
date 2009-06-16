@@ -1,0 +1,13 @@
+echo off
+echo ""
+echo "To do before continuing"
+echo ""
+echo "You want to change the date format to be French Canadian"
+echo ""
+echo "You want to change the file display to be detailed"
+echo ""
+echo "you want to show hidden and OS files options"
+echo ""
+echo "You want to change the default folder view next..."
+echo ""
+echo ""

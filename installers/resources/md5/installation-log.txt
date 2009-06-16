@@ -1,0 +1,12 @@
+ 
+Mon 06/08/2009 AT 13:19:32.50 - AUTOMATED LOG ENTRY REQUESTED BY \\mtl-fp\data\sys\installers\_041_install-synctoy.bat 
+	START	Installation of Install_Microsoft_SyncToy 
+ 
+Mon 06/08/2009 AT 13:19:50.58 - AUTOMATED LOG ENTRY REQUESTED BY \\mtl-fp\data\sys\installers\_041_install-synctoy.bat 
+	END	Installation of Install_Microsoft_SyncToy 
+ 
+Mon 06/08/2009 AT 14:39:45.67 - AUTOMATED LOG ENTRY REQUESTED BY \\mtl-fp\data\sys\installers\_019_install-MS-Checksum-Verifier.bat 
+	START	Installation of MSFileChecksumIntegrityVerifierWindows-KB841290-x86-ENU 
+ 
+Mon 06/08/2009 AT 14:39:46.08 - AUTOMATED LOG ENTRY REQUESTED BY \\mtl-fp\data\sys\installers\_019_install-MS-Checksum-Verifier.bat 
+	END	Installation of MSFileChecksumIntegrityVerifierWindows-KB841290-x86-ENU 

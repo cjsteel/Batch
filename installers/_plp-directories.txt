@@ -1,0 +1,7 @@
+archives
+configurations
+multimedia
+queries
+database
+personal
+updates

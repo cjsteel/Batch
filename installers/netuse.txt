@@ -1,0 +1,4 @@
+
+net use p: \\lsi\public
+net use k: \\cin-fp2\corporate
+net use m: \\mtl-fp\Data

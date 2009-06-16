@@ -1,0 +1,145 @@
+TO DO
+
+- source common urls to 
+SET INSTALLATION_STANDARD_URLS=%RESOURCES%\installation_customizations\urls.bat
+
+- create a test installer
+
+- create a barium test for duplicate workstation names!!! - copied virtual machines
+	if exists workstation name create second directory / userID and notify.
+
+
+
+paths:
+
+REM Our server name or ip
+SET SOURCE_SERVER=mtl-fp
+
+REM URL to our installer directory
+REM SET RESOURCES_URL=\\mtl-fp\data\sys\installers\resources\
+SET SOURCE_BASE_URL=\\%SOURCE_SERVER%\data\sys\installers\
+
+REM URL to our resources directory
+SET RESOURCES_URL=%SOURCE_BASE_URL%\resources
+
+REM URL to our logger batch script
+SET LOGGER_URL=%RESOURCES%\logger\log_this.bat
+
+REM URL to our md5 batch scripts
+SET MD5_URL=%RESOURCES%\md5
+
+REM URL to our copy batch script
+SET COPY_RESOURCES_URL=%RESOURCES%\copy_resources
+
+REM URL to our automagical logging directory
+# must be writable by batch file but not executable!
+SET MAGIC_LOGGING_BASE_URL=\\%RESOURCES_URL%\magic_logging\
+
+REM URL for user logging
+SET LOG_FILE_URL=%MAGIC_LOGGING_BASE_URL%\%
+
+\\mtl-fp\data\sys\logging\%COMPUTERNAME%\%USERNAME%
+
+REM %USERNAME% 
+REM %HOMEDRIVE% C: 
+REM %HOMEPATH% \Documents and Settings\{username} 
+REM %USERPROFILE% C:\Documents and Settings\{username}
+REM %WINDIR% C:\Windows
+REM %ALLUSERSPROFILE% C:\Documents and Settings\All Users
+
+
+%DATE% Current date in the format determined by the Date command 
+%TIME% Current time in the format determined by the Time command 
+%CD% Current directory with its full path 
+%ERRORLEVEL% Number defining exit status of a previous command or program 
+%RANDOM% Random number between 0 and 32767 
+
+http://vishpala.com/resources/tech/ms/batch-files/dos-string-manipulations
+
+auto installer
+
+	md5
+	logging
+	tracking
+	upgrading
+
+Description
+
+Two primary installation types take place, those requiring administrative privlidges and those which "must" be installed "as" the end user.
+
+Logging
+
+Logging takes place on the server and is done by workstation and user_name_and_type
+	
+	So administrative users log goes to 
+		server/base_logging_url/workstation_name/admin_log
+
+	Users log goes to 
+
+server/base_logging_url/workstation_name/user_log
+
+	Combined log is generated on demand as
+
+server/base_logging_url/workstation_name/combined_log
+
+
+Programm installation logging
+
+	server/base_logging_url/workstation_name/install_log
+		installed_program_name
+		installed_program_version
+
+		
+
+
+Programs have the following standard variables
+
+program_name
+program_version
+installer_file
+installer_url
+
+Programs may have the following
+
+target_installation_dir
+
+
+Other items may include
+
+logging_url
+mdb_db_url
+server_tracking_url
+
+Program types
+	This should be logged
+		admin_install
+		user_install
+
+Server tracking URL
+
+server_name
+	base_dir_url
+		workstation_url
+			admin_url (?)
+			user_url
+				program_url
+
+
+Big Steps
+
+start log
+copy over any files
+	on error -> log
+verify_md5
+	on error -> notify and log
+execute installer
+	check_for_prereqs
+		on error -> notify and log
+on_completion
+	log
+	notify
+	copy log to workstation(?)
+
+	on_error -> log
+
+

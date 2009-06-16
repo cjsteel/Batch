@@ -1,0 +1,14 @@
+
+
+basic_user
+	md5
+	av
+	adobe
+	explorer
+		updates
+
+firefox
+
+plp
+main_printer
+standard_office

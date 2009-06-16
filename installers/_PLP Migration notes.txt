@@ -1,0 +1,19 @@
+PLP Migration notes.txt
+
+When reinstalling a users PLP you may need to manually copy her/is data 
+to our new installation location.
+
+After your new installation is completed go to the old installation
+point (generally C:\PartListPlus and copy the following directories:
+
+configurations
+and
+reports
+
+(See Eddy if clarifiation is required)
+
+The will be pasted over the corresponding folders in the new 
+installation location at 
+
+C:\Documents and Settings\%USERNAME%\PartListLpus
+

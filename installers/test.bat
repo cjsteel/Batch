@@ -1,0 +1,1 @@
+CALL make_directory.bat C: \test\test
