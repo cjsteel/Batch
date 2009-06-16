@@ -6,7 +6,8 @@ SET RESOURCES_URL="C:\Documents and Settings\Christopher Steel\workspace\Batch\i
 SET CONFIGURE_URL="C:\Documents and Settings\Christopher Steel\workspace\Batch\installers\resources\configure.bat"
 call %CONFIGURE_URL%
 SET LOG_URL="C:\Documents and Settings\%USERNAME%\Desktop\installation-log.txt"
-
+TYPE TEST1.BAT
+echo %TEST%
 REM ################################
 REM # Created by Christopher Steel #
 REM ################################
@@ -30,8 +31,8 @@ REM #############################
 REM #     MAKE LOG ENTRY        #
 REM #############################
 REM Log activity completion
-SET LOG_ENTRY="	END	Installation of %PROGRAM_NAME%"
-call %RESOURCES_URL%\log_this.bat %0 %LOG_ENTRY% %LOG_URL%
+REM SET LOG_ENTRY="	END	Installation of %PROGRAM_NAME%"
+REM call %RESOURCES_URL%\log_this.bat %0 %LOG_ENTRY% %LOG_URL%
 
 
 
